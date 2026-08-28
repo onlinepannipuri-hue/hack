@@ -16,6 +16,7 @@ class ApiService {
   static List<String> _getCandidateUrls(String preferred) {
     final list = <String>[preferred];
     const fallbacks = [
+      'https://secure-sms-backend.onrender.com/api',
       'http://127.0.0.1:5000/api',
       'http://10.11.139.242:5000/api',
       'http://10.0.2.2:5000/api',

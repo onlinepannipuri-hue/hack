@@ -1,8 +1,8 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AppConfig {
-  // Default API endpoint (127.0.0.1 for USB ADB reverse / local, 10.11.139.242 for Wi-Fi, 10.0.2.2 for Emulator)
-  static const String defaultBaseUrl = 'http://127.0.0.1:5000/api';
+  // Default API endpoint (Render Cloud Live Backend)
+  static const String defaultBaseUrl = 'https://secure-sms-backend.onrender.com/api';
 
   static const String keyApiUrl = 'config_api_url';
   static const String keyAutoSync = 'config_auto_sync';
