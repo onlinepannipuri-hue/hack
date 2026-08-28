@@ -1,4 +1,7 @@
 services:
+  # ─────────────────────────────────────────────────────────────
+  # Backend API + WebSockets Service
+  # ─────────────────────────────────────────────────────────────
   - type: web
     name: secure-sms-backend
     env: node
@@ -20,3 +23,21 @@ services:
         generateValue: true
       - key: JWT_REFRESH_SECRET
         generateValue: true
+
+  # ─────────────────────────────────────────────────────────────
+  # Web Dashboard Frontend (React + Vite)
+  # ─────────────────────────────────────────────────────────────
+  - type: static
+    name: secure-sms-web
+    rootDir: web
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: VITE_API_BASE_URL
+        value: https://secure-sms-backend.onrender.com/api
+      - key: VITE_SOCKET_URL
+        value: https://secure-sms-backend.onrender.com
