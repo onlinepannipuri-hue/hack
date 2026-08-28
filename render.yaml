@@ -15,7 +15,7 @@ services:
       - key: CLIENT_URL
         value: "*"
       - key: MONGODB_URI
-        sync: false
+        value: mongodb+srv://onlinepannipuri_db_user:PidrhZGQAcjWLJsY@cluster0.kni5bvp.mongodb.net/secure_sms_dashboard?retryWrites=true&w=majority&appName=Cluster0
       - key: JWT_SECRET
         generateValue: true
       - key: JWT_REFRESH_SECRET
