@@ -168,7 +168,7 @@ hack/
    ```bash
    npm run dev
    ```
-   *Dashboard opens at `http://localhost:5173`.*
+   *Dashboard opens at `https://hack-epyi.vercel.app` (or local `http://localhost:5173`).*
 
 ---
 
