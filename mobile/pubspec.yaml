@@ -1,0 +1,24 @@
+name: sms_reader
+description: "Secure SMS Reader Flutter application for synchronizing authorized SMS to Web Dashboard"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.3.0
+  shared_preferences: ^2.3.5
+  intl: ^0.20.2
+  permission_handler: ^11.4.0
+  device_info_plus: ^11.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
